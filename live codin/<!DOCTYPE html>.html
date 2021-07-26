@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+// User inputs a string in a function
+// We want the function to return true whether or not it is a palindrome
+
+// Code to determine if its a palindrome
+// start with string
+// Break down string characters into an array, with each individual character being an
+// object
+// Create a function with that compares the first and last of the array to see if equal
+// that compares second, third, with second last, and third last in the array
+
+// if string equals to palindrome it will return true, and if not a palindrom
+// return false
+
+
+// Define a function that takes a string, and returnswhether 
+// it is a palindrome.Example:palindrome(“racecar”)Returns:// true 
+
+
+
+// const palindrome = (word) => {
+// const wholeword = [...word]
+// for (i = 0; i < wholeword.length; i++) {
+//     if (wholeword[i] == wholeword[length - 1])
+//      {
+//         return true
+//     } 
+//     else {
+//         return false
+//     }
+// }
+// }
+
+// palindrome("racecar")
+
+// create a function that will take the string as a param and determine whether it is a palindrome
+const palindrome = word => {
+let reverse = ""
+// split the string into individual letters — save as array
+const reverseArray = word.split("");
+// create a new string based on the array in reverse order for
+    for (let index in reverseArray){
+reverse += reverseArray[reverseArray.length - index - 1] }
+   // if new word equals test word, then return true
+return reverse === word }
+
+    </script>
+</body>
+</html>
